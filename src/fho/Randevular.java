@@ -386,7 +386,7 @@ public class Randevular extends javax.swing.JFrame {
        }else{
            try{
               Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/firat_hastanesi","root","");
-              String Query ="Delete from Randevular77 where Adi_Soyadi='"+key+"'";
+              String Query ="Delete from Randevular77 where Adi_Soyadı='"+key+"'";
               Statement Del = Con.createStatement();
               Del.executeUpdate(Query);
               JOptionPane.showMessageDialog(this,"Randevu Silindi");
